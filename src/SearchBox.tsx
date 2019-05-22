@@ -2,6 +2,10 @@ import React from "react";
 import { ANIMALS } from "petfinder-client";
 import { Consumer } from "./SearchContext";
 
+interface Props {
+  search: () => void;
+}
+
 class Search extends React.Component {
   handleFormSubmit = event => {
     event.preventDefault();
